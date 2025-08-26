@@ -1,0 +1,147 @@
+2025-08-26 12:45:54.703 [main] INFO  c.h.h.HealthcareServiceApplicationTests - Starting HealthcareServiceApplicationTests using Java 17.0.16 with PID 63207 (started by root in /home/terraform17/healthcare-service) | service=healthcare-service trace_id= span_id=
+2025-08-26 12:45:54.704 [main] INFO  c.h.h.HealthcareServiceApplicationTests - No active profile set, falling back to 1 default profile: "default" | service=healthcare-service trace_id= span_id=
+2025-08-26 12:45:56.096 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator' | service=healthcare-service trace_id= span_id=
+2025-08-26 12:45:56.154 [main] INFO  c.h.h.HealthcareServiceApplicationTests - Started HealthcareServiceApplicationTests in 1.836 seconds (process running for 2.709) | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:15.555 [main] INFO  c.h.h.HealthcareServiceApplication - Starting HealthcareServiceApplication v0.0.1-SNAPSHOT using Java 17.0.16 with PID 63749 (/home/terraform17/healthcare-service/target/healthcare-service-0.0.1-SNAPSHOT.jar started by root in /home/terraform17/healthcare-service/target) | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:15.557 [main] INFO  c.h.h.HealthcareServiceApplication - No active profile set, falling back to 1 default profile: "default" | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:16.752 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http) | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:16.780 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"] | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:16.782 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:16.782 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:16.816 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:16.818 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1199 ms | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:17.381 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator' | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:17.418 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"] | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:17.444 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/' | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:17.464 [main] INFO  c.h.h.HealthcareServiceApplication - Started HealthcareServiceApplication in 2.57 seconds (process running for 3.0) | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:32.160 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:32.161 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:32.164 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:32.210 [http-nio-8081-exec-1] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:34.154 [http-nio-8081-exec-3] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:35.074 [http-nio-8081-exec-4] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:35.476 [http-nio-8081-exec-5] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:35.874 [http-nio-8081-exec-6] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:36.273 [http-nio-8081-exec-7] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:36.678 [http-nio-8081-exec-8] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:37.042 [http-nio-8081-exec-9] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:37.440 [http-nio-8081-exec-10] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:37.897 [http-nio-8081-exec-1] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:38.297 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:38.696 [http-nio-8081-exec-3] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:46.105 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete | service=healthcare-service trace_id= span_id=
+2025-08-26 12:48:46.109 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:17.561 [main] INFO  c.h.h.HealthcareServiceApplication - Starting HealthcareServiceApplication v0.0.1-SNAPSHOT using Java 17.0.16 with PID 75906 (/home/terraform17/healthcare-service/target/healthcare-service-0.0.1-SNAPSHOT.jar started by root in /home/terraform17/healthcare-service/target) | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:17.563 [main] INFO  c.h.h.HealthcareServiceApplication - No active profile set, falling back to 1 default profile: "default" | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:18.923 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http) | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:18.946 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"] | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:18.950 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:18.951 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:19.004 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:19.006 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1370 ms | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:19.596 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator' | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:19.642 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"] | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:19.663 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/' | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:19.680 [main] INFO  c.h.h.HealthcareServiceApplication - Started HealthcareServiceApplication in 2.858 seconds (process running for 4.651) | service=healthcare-service trace_id= span_id=
+2025-08-26 13:30:30.320 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' | service=healthcare-service trace_id=68adb6f60000000001fc1040ea2fd2b1 span_id=1703637980575855571
+2025-08-26 13:30:30.321 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' | service=healthcare-service trace_id=68adb6f60000000001fc1040ea2fd2b1 span_id=1703637980575855571
+2025-08-26 13:30:30.323 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms | service=healthcare-service trace_id=68adb6f60000000001fc1040ea2fd2b1 span_id=1703637980575855571
+2025-08-26 13:30:30.388 [http-nio-8081-exec-1] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6f60000000001fc1040ea2fd2b1 span_id=2546071400960629705
+2025-08-26 13:30:32.153 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6f8000000005e4d6c4b30ac11e7 span_id=1128464113287404644
+2025-08-26 13:30:32.915 [http-nio-8081-exec-3] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6f800000000168605062db95aca span_id=8686838100441493598
+2025-08-26 13:30:33.566 [http-nio-8081-exec-4] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6f9000000003de885c022420d7c span_id=8989946652599067498
+2025-08-26 13:30:33.919 [http-nio-8081-exec-5] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6f90000000079381dbe27f504d9 span_id=766627753183888739
+2025-08-26 13:30:34.359 [http-nio-8081-exec-6] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6fa0000000004507af90abf8704 span_id=4248207642375968100
+2025-08-26 13:30:34.728 [http-nio-8081-exec-7] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6fa0000000016f7def54dcdc634 span_id=6911328796521517738
+2025-08-26 13:30:35.079 [http-nio-8081-exec-8] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6fb000000007428bfe6c9c7a842 span_id=5555249719315761212
+2025-08-26 13:30:35.465 [http-nio-8081-exec-9] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6fb000000005753331561ba9197 span_id=3582555478762112918
+2025-08-26 13:30:35.840 [http-nio-8081-exec-10] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6fb0000000009f8450bf9e652d3 span_id=8519399094563792988
+2025-08-26 13:30:36.182 [http-nio-8081-exec-1] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6fc000000003857ac81fc2fa660 span_id=7187919338888113974
+2025-08-26 13:30:39.305 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6ff0000000076fdfaf417edc4f8 span_id=1410640662166269307
+2025-08-26 13:30:39.942 [http-nio-8081-exec-3] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb6ff0000000040863ea5e5916cb3 span_id=1095498162610356041
+2025-08-26 13:30:40.399 [http-nio-8081-exec-4] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb700000000000d5eee34df15c2f3 span_id=6545397740419969062
+2025-08-26 13:30:40.759 [http-nio-8081-exec-5] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb7000000000019cd33ac60f001e5 span_id=5390216604353145125
+2025-08-26 13:30:41.150 [http-nio-8081-exec-6] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb7010000000051dd9c75c382d3ba span_id=4221798966784188650
+2025-08-26 13:30:41.520 [http-nio-8081-exec-7] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb701000000004f2d0c5feb2e96c3 span_id=945201163927845415
+2025-08-26 13:30:41.871 [http-nio-8081-exec-8] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb7010000000051c4bb4c436c05d6 span_id=5170403482640941402
+2025-08-26 13:30:42.231 [http-nio-8081-exec-9] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb702000000003201fe36057cadc4 span_id=5355755984298600568
+2025-08-26 13:31:22.030 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb72a000000007dd828cea63c47e8 span_id=2105014193278233408
+2025-08-26 13:31:23.663 [http-nio-8081-exec-3] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb72b000000004fb4b4878cc068dc span_id=1463198245925734840
+2025-08-26 13:31:24.061 [http-nio-8081-exec-4] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb72c0000000020c08d7550fac0ad span_id=757508987096482998
+2025-08-26 13:31:24.428 [http-nio-8081-exec-5] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb72c000000006ca77b56c1bb62cc span_id=8298041196478846361
+2025-08-26 13:31:43.715 [http-nio-8081-exec-8] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb73f000000002dd2622c13932c92 span_id=6733158145191354701
+2025-08-26 13:31:45.423 [http-nio-8081-exec-9] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb741000000002d547193a2426bcf span_id=6923785522807053130
+2025-08-26 13:31:45.837 [http-nio-8081-exec-10] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb7410000000041f80980466286d4 span_id=4864174012605834225
+2025-08-26 13:31:46.212 [http-nio-8081-exec-1] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb742000000001d2a7fb96e227552 span_id=7751416828031421365
+2025-08-26 13:31:46.573 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb7420000000025faef5c5489a939 span_id=6502581098272778986
+2025-08-26 13:31:46.925 [http-nio-8081-exec-3] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb7420000000010645ef05e6e9171 span_id=7343489328477383072
+2025-08-26 13:31:47.286 [http-nio-8081-exec-4] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb7430000000053a991374040be79 span_id=3661092070022857911
+2025-08-26 13:31:47.605 [http-nio-8081-exec-5] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb7430000000001c1c924caf78841 span_id=2295812723927288395
+2025-08-26 13:31:47.972 [http-nio-8081-exec-6] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb74300000000025a018d6add9616 span_id=1548847707492197982
+2025-08-26 13:31:48.322 [http-nio-8081-exec-7] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb744000000002115d1e8fc94fbed span_id=1825003357615978624
+2025-08-26 13:31:51.277 [http-nio-8081-exec-8] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb74700000000345173658d6d7016 span_id=3626343749151238631
+2025-08-26 13:31:58.729 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb74e0000000067f434ead4a50634 span_id=1696113184117036424
+2025-08-26 13:32:02.104 [http-nio-8081-exec-6] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb752000000002bba3005214ec291 span_id=2731467503423429657
+2025-08-26 13:32:03.031 [http-nio-8081-exec-7] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb7530000000048bec1d2f0f9072b span_id=1217325436528604257
+2025-08-26 13:32:03.468 [http-nio-8081-exec-8] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb75300000000121c21d964416d5c span_id=5229941957888727001
+2025-08-26 13:32:03.804 [http-nio-8081-exec-9] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb75300000000269780d355a9de98 span_id=2884734928534646722
+2025-08-26 13:32:04.163 [http-nio-8081-exec-10] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb7540000000053a3b9bdea0be8c4 span_id=4827031544476033120
+2025-08-26 13:32:04.522 [http-nio-8081-exec-1] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb754000000001f126a5b6cfc8042 span_id=5062349636561818646
+2025-08-26 13:32:04.857 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb7540000000034c877d6000b95fd span_id=3000668465437210764
+2025-08-26 13:32:06.861 [http-nio-8081-exec-3] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb756000000006bf78dae9cc03d99 span_id=4121597899625740277
+2025-08-26 13:36:04.448 [http-nio-8081-exec-6] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb844000000004bcba91ec6f0edcd span_id=8582766761313911765
+2025-08-26 13:36:06.028 [http-nio-8081-exec-7] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb8460000000008b2e79ede33beb6 span_id=8165607759872697395
+2025-08-26 13:36:06.470 [http-nio-8081-exec-8] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb84600000000091eb77ee6923933 span_id=2535605873347846570
+2025-08-26 13:36:06.893 [http-nio-8081-exec-9] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb84600000000764ad0f410021d41 span_id=5942449312700209229
+2025-08-26 13:36:07.389 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb8470000000049d834ce2ff7643a span_id=1080142030036026532
+2025-08-26 13:36:07.750 [http-nio-8081-exec-3] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb84700000000208c0c4deb2235bb span_id=7696597808480680892
+2025-08-26 13:36:08.109 [http-nio-8081-exec-4] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb8480000000058170edecb9b3d74 span_id=6367871813831602241
+2025-08-26 13:36:08.484 [http-nio-8081-exec-5] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb84800000000558e69f52ff910fc span_id=5986385145412740940
+2025-08-26 13:36:08.860 [http-nio-8081-exec-6] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb848000000001808c8afaf39e991 span_id=1194506908530306504
+2025-08-26 13:36:09.261 [http-nio-8081-exec-7] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb849000000003f7fe03acc79c7fc span_id=8298860241849191908
+2025-08-26 13:36:09.620 [http-nio-8081-exec-8] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb849000000006bb15690dab1a455 span_id=2648067773257619472
+2025-08-26 13:36:09.972 [http-nio-8081-exec-9] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb849000000000a2fe6789e847fd1 span_id=7510759911591138378
+2025-08-26 13:36:10.333 [http-nio-8081-exec-10] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb84a000000003003d4c6b68562d6 span_id=8211200231118443590
+2025-08-26 13:36:12.269 [http-nio-8081-exec-1] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb84c000000004fe590ede82da961 span_id=7550543144169480117
+2025-08-26 13:36:12.693 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb84c000000003ffe3602dbf83840 span_id=9183841355075220992
+2025-08-26 13:36:13.076 [http-nio-8081-exec-3] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb84d000000006e83647f8edacad7 span_id=5239013952679980082
+2025-08-26 13:36:13.452 [http-nio-8081-exec-4] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb84d0000000079ea8d320651918f span_id=6973166051990179623
+2025-08-26 13:36:13.828 [http-nio-8081-exec-5] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb84d000000000c632c23d8d2b78f span_id=7281151745042480123
+2025-08-26 13:36:14.220 [http-nio-8081-exec-6] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb84e000000007871f7a41cddedb1 span_id=7193652789436361430
+2025-08-26 13:36:14.604 [http-nio-8081-exec-7] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb84e0000000040108dccb684cc94 span_id=7770231591511653985
+2025-08-26 13:36:19.372 [http-nio-8081-exec-10] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb853000000007a7adedffb0e6d07 span_id=6535345175701633052
+2025-08-26 13:36:19.834 [http-nio-8081-exec-1] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb8530000000021e5570cefc84708 span_id=7720193393650442735
+2025-08-26 13:36:20.227 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb8540000000076a70c7bdcf0059b span_id=7999745783687538670
+2025-08-26 13:36:20.570 [http-nio-8081-exec-3] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb8540000000057dca8b663f502d8 span_id=7600604976348593197
+2025-08-26 13:36:20.912 [http-nio-8081-exec-4] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb8540000000002200c6c6396d507 span_id=8391674812537579642
+2025-08-26 13:36:22.885 [http-nio-8081-exec-5] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb8560000000037870f4f397acd13 span_id=7533086684230495516
+2025-08-26 13:36:23.299 [http-nio-8081-exec-6] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb8570000000003f923b4cd8ad3a2 span_id=6226208996917573948
+2025-08-26 13:36:23.714 [http-nio-8081-exec-7] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb8570000000014fa9774df24d3e7 span_id=1834427239498641368
+2025-08-26 13:36:24.107 [http-nio-8081-exec-8] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb85800000000583fd8ec34a75a73 span_id=1647279362064801675
+2025-08-26 13:36:24.498 [http-nio-8081-exec-9] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb858000000003617d23506f129cd span_id=8592021196790018864
+2025-08-26 13:36:24.883 [http-nio-8081-exec-10] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb85800000000535f2fb2736db047 span_id=9122522539116659972
+2025-08-26 13:36:25.233 [http-nio-8081-exec-1] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb859000000002ddfdc607e80ddd4 span_id=840218607304729003
+2025-08-26 13:36:26.946 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb85a00000000013ef38463d60f34 span_id=7675501115976602690
+2025-08-26 13:36:27.339 [http-nio-8081-exec-4] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb85b000000000e848666f54715c5 span_id=4377321049069444056
+2025-08-26 13:36:27.723 [http-nio-8081-exec-5] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb85b000000005a42f5e8a664652d span_id=6701355085959013983
+2025-08-26 13:36:28.067 [http-nio-8081-exec-6] INFO  c.h.h.HealthcareController - Fetching patient by id=P-1001 | service=healthcare-service trace_id=68adb85c000000005e7d7a776de8f37c span_id=6021401461347911013
+2025-08-26 13:37:18.532 [http-nio-8081-exec-9] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb88e000000001ac78c27ead2fdaa span_id=7731306487800181813
+2025-08-26 13:41:50.819 [http-nio-8081-exec-2] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb99e0000000052ceed3fb591cc42 span_id=8464465674024535366
+2025-08-26 13:41:52.564 [http-nio-8081-exec-3] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb9a000000000733555efd225cdc7 span_id=3184792327546413607
+2025-08-26 13:41:53.328 [http-nio-8081-exec-4] INFO  c.h.h.HealthcareController - Fetching all patients | service=healthcare-service trace_id=68adb9a100000000658de243c82b8326 span_id=7411799059427127313
+2025-08-26 13:50:28.495 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete | service=healthcare-service trace_id= span_id=
+2025-08-26 13:50:28.497 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:29.580 [main] INFO  c.h.h.HealthcareServiceApplication - Starting HealthcareServiceApplication v0.0.1-SNAPSHOT using Java 17.0.16 with PID 83374 (/home/terraform17/healthcare-service/target/healthcare-service-0.0.1-SNAPSHOT.jar started by root in /home/terraform17/healthcare-service/target) | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:29.583 [main] INFO  c.h.h.HealthcareServiceApplication - No active profile set, falling back to 1 default profile: "default" | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:31.000 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http) | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:31.022 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"] | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:31.026 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:31.026 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44] | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:31.068 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:31.069 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1429 ms | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:31.698 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator' | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:31.735 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"] | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:31.750 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/' | service=healthcare-service trace_id= span_id=
+2025-08-26 13:52:31.764 [main] INFO  c.h.h.HealthcareServiceApplication - Started HealthcareServiceApplication in 3.015 seconds (process running for 4.839) | service=healthcare-service trace_id= span_id=
+2025-08-26 13:53:14.119 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete | service=healthcare-service trace_id= span_id=
+2025-08-26 13:53:14.122 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete | service=healthcare-service trace_id= span_id=

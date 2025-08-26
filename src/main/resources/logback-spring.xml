@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-
-  <!-- Absolute path so the Datadog Agent can tail reliably -->
-  <property name="LOG_DIR" value="C:/jmeter/logs"/>
+  <property name="LOG_DIR" value="/var/log/healthcare-service"/>
   <property name="LOG_FILE" value="${LOG_DIR}/app.log"/>
-
   <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-    <encoder>
-      <!-- include MDC keys from Datadog agent -->
-      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg | service=healthcare-service trace_id=%X{dd.trace_id} span_id=%X{dd.span_id}%n</pattern>
+    <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+      <providers>
+        <timestamp/>
+        <logLevel/>
+        <threadName/>
+        <loggerName/>
+        <message/>
+        <mdc/>  <!-- includes dd.trace_id & dd.span_id injected by the Java agent -->
+        <jsonFields>
+          <field name="service" value="healthcare-service"/>
+          <field name="env" value="dev"/>
+        </jsonFields>
+      </providers>
     </encoder>
   </appender>
 
@@ -18,8 +25,19 @@
       <fileNamePattern>${LOG_DIR}/app-%d{yyyy-MM-dd}.log</fileNamePattern>
       <maxHistory>30</maxHistory>
     </rollingPolicy>
-    <encoder>
-      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg | service=healthcare-service trace_id=%X{dd.trace_id} span_id=%X{dd.span_id}%n</pattern>
+    <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+      <providers>
+        <timestamp/>
+        <logLevel/>
+        <threadName/>
+        <loggerName/>
+        <message/>
+        <mdc/>
+        <jsonFields>
+          <field name="service" value="healthcare-service"/>
+          <field name="env" value="dev"/>
+        </jsonFields>
+      </providers>
     </encoder>
   </appender>
 
@@ -28,3 +46,4 @@
     <appender-ref ref="FILE"/>
   </root>
 </configuration>
+
