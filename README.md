@@ -590,8 +590,17 @@ http://$status.hostIP:8126
 <img width="940" height="571" alt="image" src="https://github.com/user-attachments/assets/cd2e6e8f-d82b-46ae-aa11-a4824f680294" />
  <img width="940" height="632" alt="image" src="https://github.com/user-attachments/assets/3d24d3d4-3ba6-4c54-8253-13413d375005" />
 
-
+## Testing/Validation
+```bash
+curl -s localhost:8080/api/v1/patients | jq .
+curl -s localhost:8080/api/v1/patients/P-1001 | jq .
+curl -s localhost:8080/api/v1/appointments | jq .
+curl -s -X POST localhost:8080/api/v1/appointments -H "Content-Type: application/json" -d '{"patientId":"P-1002","doctor":"Dr. Mehta"}' | jq .
+curl -s localhost:8080/api/v1/simulate-error | jq .
+```
+<img width="953" height="466" alt="image" src="https://github.com/user-attachments/assets/98ada45a-ecef-49b1-9d09-0380df3f5eb4" />
  
+
 
 
 
