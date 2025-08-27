@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "d755f411-2e6f-4179-b8a4-d06ef55c2235",
+		"name": "Health-Care-APM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34508175"
+	},
+	"item": [
+		{
+			"name": "GetPatient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://aa3ea434e2883424d8d5a6e7c5c82dcf-511886680.us-east-1.elb.amazonaws.com:8081/api/v1/patients/P-1001",
+					"protocol": "http",
+					"host": [
+						"aa3ea434e2883424d8d5a6e7c5c82dcf-511886680",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"patients",
+						"P-1001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://aa3ea434e2883424d8d5a6e7c5c82dcf-511886680.us-east-1.elb.amazonaws.com:8081/api/v1/patients",
+					"protocol": "http",
+					"host": [
+						"aa3ea434e2883424d8d5a6e7c5c82dcf-511886680",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAppointments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://aa3ea434e2883424d8d5a6e7c5c82dcf-511886680.us-east-1.elb.amazonaws.com:8081/api/v1/appointments",
+					"protocol": "http",
+					"host": [
+						"aa3ea434e2883424d8d5a6e7c5c82dcf-511886680",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simulated_Error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://34.86.51.82:8081/simulate-error",
+					"protocol": "http",
+					"host": [
+						"34",
+						"86",
+						"51",
+						"82"
+					],
+					"port": "8081",
+					"path": [
+						"simulate-error"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Appointments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"patientId\":\"P-1002\",\"doctor\":\"Dr. Mehta\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://34.86.51.82:8081/api/v1/appointments",
+					"protocol": "http",
+					"host": [
+						"34",
+						"86",
+						"51",
+						"82"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
