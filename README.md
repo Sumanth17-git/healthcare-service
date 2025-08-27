@@ -126,7 +126,6 @@ compliance_config:
 
 Usecase 1: Host Based enablement
 1.Firstly we need to make sure the Datadog agent is installed and update the datadog-agent.yaml as per below
-
 2. We will use this repository for this usecase , my expectation is that I want to enable the APM tracing, Profiling, Dynamic Instrumentation, Logs ,Logs correlation with traces. We need to make few tweeks for this.
 
 Step 1:  Update the Logging configuration logback-spring.xml 
@@ -182,14 +181,15 @@ JSON logs (nice in Datadog Logs):
 </configuration>
 ```
 Your controller code is fine; just keep using logger.info(...). Once the layout prints the MDC, correlation works.
-
 Step 2: Make sure the Agent ships the logs
 Datadog Agent on a VM: /etc/datadog-agent/datadog.yaml
 
 logs_enabled: true
 apm_config:
   enabled: true
+
 Create a log integration file (point it to your app’s log OR use console/stdout if you run it under a supervisor that captures stdout):
+
 /etc/datadog-agent/conf.d/java.d/conf.yaml   (  if you dont see java.d directory, create a one)
 
 ```yaml
@@ -202,6 +202,7 @@ logs:
 ```
 If you emit to stdout, point the Agent to that stream (systemd/journald) or run the app under a process manager that writes to a file the Agent can read.
 Restart the Agent:
+
 ```yaml
 sudo systemctl restart datadog-agent
 ```
@@ -256,17 +257,17 @@ java -javaagent:/home/terraform17/dd-java-agent.jar \
 Flip the Datadog UI toggle you showed
 In the APM > Services > java-service > Configuration drawer (your screenshot), set Connect Logs and Traces → Enabled.
 Monitoring → Leave Not Configured (unless you use queues)
+
 •	If this service produces/consumes Kafka/SQS/Pub/Sub, set Enabled here and start your app with a tracer setting that turns on DSM (e.g., environment variable DD_DATA_STREAMS_ENABLED=true; confirm in startup logs that it’s recognized).
+
 •	Otherwise keep it off.
 <img width="661" height="457" alt="image" src="https://github.com/user-attachments/assets/594eb109-af76-4100-ae31-3544ae7a0d9d" />
-
-
 This tells Datadog’s pipelines to use the injected trace_id/span_id to auto-link.
 your logs will look like normal application logs but with the Datadog trace/span IDs appended.
 
 From Trace:
  <img width="677" height="310" alt="image" src="https://github.com/user-attachments/assets/fe946720-e35d-47d7-afa4-e5ea694c53f5" />
-
+```yaml
 In Logs, search:
 service:java-service @trace_id:*
 From Logs → Trace
@@ -285,5 +286,6 @@ From APM → Logs
 
 6.	Choose Show Logs on Infrastructure  ( This confirm the logs are ingested into NewRelic)
  <img width="700" height="326" alt="image" src="https://github.com/user-attachments/assets/7f9a7267-7b1c-4a02-b52a-cd3ac414ccf6" />
-
+```
 If you don’t see the link, ensure APM → Services → healthcare-service → Configuration → “Connect Logs and Traces” = Enabled.
+
