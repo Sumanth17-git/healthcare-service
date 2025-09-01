@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
         - name: healthcare-service
-          image: sumanth17121988/healthcare-service:2
+          image: sumanth17121988/healthcare:datadog
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
