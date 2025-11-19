@@ -57,3 +57,22 @@ POST http://3.91.194.213:8081/api/v1/appointments
 http://3.91.194.213:8081/api/v1/patients
 http://3.91.194.213:8081/api/v1/appointments
 ```
+
+### Datadog APM Tracing 
+```bash
+java -javaagent:/home/ubuntu/dd-java-agent.jar \
+  -Ddd.profiling.enabled=true \
+  -XX:FlightRecorderOptions=stackdepth=256 \
+  -Ddd.data-streams.enabled=true \
+  -Ddd.trace.remove.integration-service-names.enabled=true \
+  -Ddd.logs.injection=true \
+  -Ddd.trace.sample.rate=1 \
+  -Ddd.service=healthcare-service \
+  -Ddd.env=prod \
+  -Ddd.version=0.0.1 \
+  -Ddd.profiling.directallocation.enabled=true \
+  -Ddd.profiling.ddprof.liveheap.enabled=true \
+  -Ddd.profiling.heap.enabled=true \
+  -jar healthcare-service-0.0.1-SNAPSHOT.jar
+
+```
